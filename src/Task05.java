@@ -7,15 +7,14 @@ public class Task05 {
 //Например: longestString (“java”,”welcome”,”hello”) -> “welcome”
         System.out.println("Введите первую строку");
         Scanner sc = new Scanner(System.in);
-        String str1 = String.valueOf(sc.nextInt());
+        String str1 = sc.nextLine();
         System.out.println("Введите вторую строку");
-        String str2 = String.valueOf(sc.nextInt());
+        String str2 = sc.nextLine();
         System.out.println("Введите третью строку");
-        String str3 = String.valueOf(sc.nextInt());
+        String str3 = sc.nextLine();
         System.out.println(longestString (str1, str2, str3));
 
     }
-
     public static String longestString(String str1, String str2, String str3) {
         if (str1.length() > str2.length() && str1.length() > str3.length()) {
             return str1;
